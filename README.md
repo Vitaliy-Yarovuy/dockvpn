@@ -3,7 +3,7 @@
 Quick instructions:
 
 ```bash
-CID=$(docker run -d --privileged -p 1194:1194/udp -p 443:443/tcp jpetazzo/dockvpn)
+CID=$(docker run -d --privileged -p 1194:1194/udp -p 1443:1443/tcp dockvpn)
 docker run -t -i -p 8080:8080 --volumes-from $CID jpetazzo/dockvpn serveconfig
 ```
 
